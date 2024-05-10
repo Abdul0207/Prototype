@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Northampton University - Discussions</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images/logo-fav.png">
+    <style>
+        /* Custom CSS for Discussions Page */
+        .discussion-container {
+            margin-top: 20px;
+        }
+
+        .discussion-form {
+            margin-bottom: 30px;
+        }
+
+        .discussion-form input[type="text"],
+        .discussion-form input[type="email"],
+        .discussion-form textarea,
+        .discussion-form input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        .discussion-form select {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            background-color: #fff;
+        }
+
+        .discussion-form input[type="submit"] {
+            background-color: #2f3f74;
+            color: white;
+            cursor: pointer;
+        }
+
+        .discussion-form input[type="submit"]:hover {
+            background-color: #283357;
+        }
+
+        .comments-container {
+            margin-top: 20px;
+        }
+
+        .comment {
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            padding: 10px;
+            margin-bottom: 10px;
+            background-color: #f9f9f9;
+        }
+
+        .comment p {
+            margin: 0;
+        }
+
+        .comment-author {
+            font-weight: bold;
+            color: #2f3f74;
+        }
+
+        .comment-form textarea,
+        .comment-form input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        .comment-form input[type="submit"] {
+            background-color: #2f3f74;
+            color: white;
+            cursor: pointer;
+        }
+
+        .comment-form input[type="submit"]:hover {
+            background-color: #283357;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <a href="index.html"><img src="images/logo.png" alt="Northampton University Logo"></a>
+        </header>
+        <div class="top-nav">
+            <a href="index.html">Home</a><span class="sep">|</span>
+            <a href="about.html">About</a><span class="sep">|</span>
+            <a class="active" href="discussions.html">Discussions</a><span class="sep">|</span>
+            <a href="testimonials.html">Testimonials</a><span class="sep">|</span>
+            <a href="contact.html">Contact</a><span class="sep">|</span>
+            <a href="login.html">Login</a><span class="sep">|</span>
+            <a href="signup.html">Sign Up</a>
+        </div>
+        <div class="banner banner-left">
+            <h2 style="text-align: center">Start a New Discussion</h2>
+            <div class="discussion-container" style="width: 75%; margin: 0 auto;">
+                <form class="discussion-form" action="" onsubmit="return validateDiscussion();">
+                    <label for="name">Your Full Name</label>
+                    <input type="text" id="name" name="name" placeholder="Your name..">
+
+                    <label for="email">Write a title</label>
+                    <input type="email" id="email" name="email" placeholder="Discussion title..">
+
+                    <label for="category">Category</label>
+                    <select id="category" name="category">
+                        <option value="culture">Cultural Exchange</option>
+                        <option value="integration">Integration Challenges</option>
+                        <option value="support">Support Network</option>
+                    </select>
+
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" placeholder="Write your discussion topic.."
+                        style="height:100px"></textarea>
+                    <br>
+                    <label for="attachments">Upload Image/Attachments</label><br>
+                    <input type="file" id="attachments" name="attachments" accept="image/*"><br><br>
+
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+
+            <h2 style="text-align: center">Comments</h2>
+            <div class="comments-container">
+                <div class="comment">
+                    <p><span class="comment-author">John Doe</span>: Lorem ipsum dolor sit amet, consectetur adipiscing
+                        elit. Nullam fringilla velit sit amet enim consectetur, at fermentum justo maximus.</p>
+                </div>
+                <div class="comment">
+                    <p><span class="comment-author">Jane Smith</span>: Sed at neque eu leo sollicitudin elementum.
+                        Integer id sapien eu purus tempor condimentum. Aliquam pharetra tortor et finibus pulvinar.</p>
+                </div>
+            </div>
+
+            <div class="comment-form">
+                <h3>Leave a Comment</h3>
+                <form action="" onsubmit="return validateComment();">
+                    <textarea id="comment" name="comment" placeholder="Write your comment.."
+                        style="height:100px"></textarea>
+                    <input type="submit" value="Post Comment">
+                </form>
+            </div>
+        </div>
+        <footer>
+            &copy; Northampton University, 2024
+        </footer>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
