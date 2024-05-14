@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Northumbria University - Complaints</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images/logo-fav.png">
+    <style>
+        .navbar .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin: 20px;
+        }
+
+        .complaint-section {
+            width: 60%;
+            margin-right: 20px;
+        }
+
+        .complaint-form {
+            margin-top: 50px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+
+        .complaint-form h2 {
+            color: #2f3f74;
+            margin-bottom: 20px;
+        }
+
+        .complaint-form label {
+            display: block;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .complaint-form input[type="text"],
+        .complaint-form textarea,
+        .complaint-form select,
+        .complaint-form input[type="file"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        .complaint-form .radio-buttons label {
+            margin-right: 20px;
+        }
+
+        .complaint-form .link-btn {
+            width: 100%;
+        }
+
+        .previous-complaints {
+            width: 40%;
+            border-left: 1px solid #ccc;
+            padding-left: 20px;
+        }
+
+        .previous-complaints h2 {
+            color: #2f3f74;
+            margin-bottom: 20px;
+        }
+
+        .previous-complaints ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .previous-complaints li {
+            margin-bottom: 20px;
+        }
+
+        .previous-complaints li:last-child {
+            margin-bottom: 0;
+        }
+
+        .previous-complaints .complaint-info {
+            background-color: #f9f9f9;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        .previous-complaints .complaint-info p {
+            margin: 0;
+        }
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo brandlogo">
+                <a href="index.html"><img src="images/logo.png" alt="Northumbria University Logo"></a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="user-discussion.html">Discussions</a></li>
+                <li><a href="user-peers.html">Know your peers</a></li>
+                <li><a class="active" href="raise-query.html">Raise a Complaint</a></li>
+                <li><a href="index.html">Logout</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="complaint-section">
+            <div class="complaint-form">
+                <h2>Raise a Complaint</h2>
+                <form action="" method="POST" enctype="multipart/form-data">
+                    <label for="complaint-type">Complaint Type</label>
+                    <select id="complaint-type" name="complaint-type" required>
+                        <option value="" disabled selected>Select complaint type</option>
+                        <option value="Academic">Academic</option>
+                        <option value="Facilities">Facilities</option>
+                        <option value="Administrative">Administrative</option>
+                        <option value="Other">Other</option>
+                    </select>
+
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" name="subject" placeholder="Enter subject of the complaint" required>
+
+                    <label for="description">Description</label>
+                    <textarea id="description" name="description"
+                        placeholder="Enter detailed description of the complaint" required></textarea>
+
+                    <label for="attachment">Attachment</label>
+                    <input type="file" id="attachment" name="attachment">
+
+                    <label for="severity">Severity</label>
+                    <div class="radio-buttons">
+                        <label><input type="radio" name="severity" value="Low" required>Low</label>
+                        <label><input type="radio" name="severity" value="Medium" required>Medium</label>
+                        <label><input type="radio" name="severity" value="High" required>High</label>
+                    </div>
+
+                    <label for="contact-preference">Preferred Contact Method</label>
+                    <div class="radio-buttons">
+                        <label><input type="radio" name="contact-preference" value="Email" required>Email</label>
+                        <label><input type="radio" name="contact-preference" value="Phone" required>Phone</label>
+                        <label><input type="radio" name="contact-preference" value="Both" required>Both</label>
+                    </div>
+
+                    <input type="submit" value="Submit" class="link-btn">
+                </form>
+            </div>
+        </div>
+        <div class="previous-complaints">
+            <h2>Previous Complaints</h2>
+            <ul>
+                <li>
+                    <div class="complaint-info">
+                        <p><strong>Subject:</strong> Internet Connectivity Issue</p>
+                        <p><strong>Type:</strong> Facilities</p>
+                        <p><strong>Severity:</strong> High</p>
+                        <p><strong>Status:</strong> Pending</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="complaint-info">
+                        <p><strong>Subject:</strong> Assignment Submission Deadline</p>
+                        <p><strong>Type:</strong> Academic</p>
+                        <p><strong>Severity:</strong> Medium</p>
+                        <p><strong>Status:</strong> Resolved</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <footer>
+        &copy; Northumbria University, 2024
+    </footer>
+</body>
+
+</html>

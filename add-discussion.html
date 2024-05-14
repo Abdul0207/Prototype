@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Northumbria University - New Discussion</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images/logo-fav.png">
+    <style>
+        .discussion-container {
+            margin-top: 20px;
+        }
+
+        .discussion-form {
+            margin-bottom: 30px;
+        }
+
+        .discussion-form input[type="text"],
+        .discussion-form input[type="email"],
+        .discussion-form textarea,
+        .discussion-form input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        .discussion-form select {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            background-color: #fff;
+        }
+
+        .discussion-form input[type="submit"] {
+            background-color: #2f3f74;
+            color: white;
+            cursor: pointer;
+        }
+
+        .discussion-form input[type="submit"]:hover {
+            background-color: #283357;
+        }
+
+        .comments-container {
+            margin-top: 20px;
+        }
+
+        .comment {
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            padding: 10px;
+            margin-bottom: 10px;
+            background-color: #f9f9f9;
+        }
+
+        .comment p {
+            margin: 0;
+        }
+
+        .comment-author {
+            font-weight: bold;
+            color: #2f3f74;
+        }
+
+        .comment-form textarea,
+        .comment-form input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        .comment-form input[type="submit"] {
+            background-color: #2f3f74;
+            color: white;
+            cursor: pointer;
+        }
+
+        .comment-form input[type="submit"]:hover {
+            background-color: #283357;
+        }
+
+        .comment-form form {
+            margin-top: 0 !important;
+        }
+
+        .navbar .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo brandlogo">
+                <a href="index.html"><img src="images/logo.png" alt="Northumbria University Logo"></a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a class="active" href="user-discussion.html">Discussions</a></li>
+                <li><a href="user-peers.html">Know your peers</a></li>
+                <li><a href="raise-query.html">Raise a Complaint</a></li>
+                <li><a href="index.html">Logout</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="banner banner-left">
+            <h2 style="text-align: center">Start a New Discussion</h2>
+            <div class="discussion-container" style="width: 75%; margin: 0 auto;">
+                <form class="discussion-form" action="" onsubmit="">
+                    <label for="name">Your Full Name</label>
+                    <input type="text" id="name" name="name" placeholder="Your name..">
+                    <br>
+                    <label for="email">Write a title</label>
+                    <input type="email" id="email" name="email" placeholder="Discussion title..">
+                    <br>
+                    <label for="category">Category</label>
+                    <select id="category" name="category">
+                        <option value="culture">Cultural Exchange</option>
+                        <option value="integration">Integration Challenges</option>
+                        <option value="support">Support Network</option>
+                    </select>
+                    <br>
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" placeholder="Write your discussion topic.."
+                        style="height:100px"></textarea>
+                    <br>
+                    <label for="attachments">Upload Image/Attachments</label><br>
+                    <input type="file" id="attachments" name="attachments" accept="image/*"><br><br>
+                    <br>
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+
+
+        </div>
+        <footer>
+            &copy; Northumbria University, 2024
+        </footer>
+    </div>
+</body>
+
+</html>

@@ -3,98 +3,30 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Northampton University - Discussions</title>
+    <title>Northumbria University - Discussions</title>
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="images/logo-fav.png">
+
     <style>
-        /* Custom CSS for Discussions Page */
-        .discussion-container {
-            margin-top: 20px;
+        .discussion-section {
+            width: 75%;
+            margin: auto;
+            border-bottom: 1px solid #fff;
         }
 
-        .discussion-form {
-            margin-bottom: 30px;
-        }
-
-        .discussion-form input[type="text"],
-        .discussion-form input[type="email"],
-        .discussion-form textarea,
-        .discussion-form input[type="submit"] {
-            width: 100%;
-            padding: 10px;
-            margin: 5px 0;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            box-sizing: border-box;
-        }
-
-        .discussion-form select {
-            width: 100%;
-            padding: 10px;
-            margin: 5px 0;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            box-sizing: border-box;
-            background-color: #fff;
-        }
-
-        .discussion-form input[type="submit"] {
-            background-color: #2f3f74;
-            color: white;
-            cursor: pointer;
-        }
-
-        .discussion-form input[type="submit"]:hover {
-            background-color: #283357;
-        }
-
-        .comments-container {
-            margin-top: 20px;
-        }
-
-        .comment {
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            padding: 10px;
-            margin-bottom: 10px;
-            background-color: #f9f9f9;
-        }
-
-        .comment p {
-            margin: 0;
-        }
-
-        .comment-author {
-            font-weight: bold;
-            color: #2f3f74;
-        }
-
-        .comment-form textarea,
-        .comment-form input[type="submit"] {
-            width: 100%;
-            padding: 10px;
-            margin: 5px 0;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            box-sizing: border-box;
-        }
-
-        .comment-form input[type="submit"] {
-            background-color: #2f3f74;
-            color: white;
-            cursor: pointer;
-        }
-
-        .comment-form input[type="submit"]:hover {
-            background-color: #283357;
+        .post img {
+            width: 50% !important;
+            border: 2px #fff solid;
+            box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
         }
     </style>
+
 </head>
 
 <body>
     <div class="container">
         <header>
-            <a href="index.html"><img src="images/logo.png" alt="Northampton University Logo"></a>
+            <a href="index.html"><img src="images/logo.png" alt="Northumbria University Logo"></a>
         </header>
         <div class="top-nav">
             <a href="index.html">Home</a><span class="sep">|</span>
@@ -105,62 +37,75 @@
             <a href="login.html">Login</a><span class="sep">|</span>
             <a href="signup.html">Sign Up</a>
         </div>
-        <div class="banner banner-left">
-            <h2 style="text-align: center">Start a New Discussion</h2>
-            <div class="discussion-container" style="width: 75%; margin: 0 auto;">
-                <form class="discussion-form" action="" onsubmit="return validateDiscussion();">
-                    <label for="name">Your Full Name</label>
-                    <input type="text" id="name" name="name" placeholder="Your name..">
-
-                    <label for="email">Write a title</label>
-                    <input type="email" id="email" name="email" placeholder="Discussion title..">
-
-                    <label for="category">Category</label>
-                    <select id="category" name="category">
-                        <option value="culture">Cultural Exchange</option>
-                        <option value="integration">Integration Challenges</option>
-                        <option value="support">Support Network</option>
-                    </select>
-
-                    <label for="message">Message</label>
-                    <textarea id="message" name="message" placeholder="Write your discussion topic.."
-                        style="height:100px"></textarea>
-                    <br>
-                    <label for="attachments">Upload Image/Attachments</label><br>
-                    <input type="file" id="attachments" name="attachments" accept="image/*"><br><br>
-
-                    <input type="submit" value="Submit">
-                </form>
-            </div>
-
-            <h2 style="text-align: center">Comments</h2>
-            <div class="comments-container">
-                <div class="comment">
-                    <p><span class="comment-author">John Doe</span>: Lorem ipsum dolor sit amet, consectetur adipiscing
-                        elit. Nullam fringilla velit sit amet enim consectetur, at fermentum justo maximus.</p>
-                </div>
-                <div class="comment">
-                    <p><span class="comment-author">Jane Smith</span>: Sed at neque eu leo sollicitudin elementum.
-                        Integer id sapien eu purus tempor condimentum. Aliquam pharetra tortor et finibus pulvinar.</p>
-                </div>
-            </div>
-
-            <div class="comment-form">
-                <h3>Leave a Comment</h3>
-                <form action="" onsubmit="return validateComment();">
-                    <textarea id="comment" name="comment" placeholder="Write your comment.."
-                        style="height:100px"></textarea>
-                    <input type="submit" value="Post Comment">
-                </form>
+        <div class="banner">
+            <div class="banner-abt">
+                <h1 style="margin-bottom: 0">Discussions</h1>
+                <p>Engage in meaningful discussions with fellow students and faculty members.</p>
             </div>
         </div>
+
+        <section class="discussion-section">
+            <div class="post">
+                <h3>Diwali Celebrations Around the World</h3>
+                <img src="https://pragativadi.com/wp-content/uploads/2023/11/images-46.jpeg" alt="Diwali Celebrations"
+                    style="width: 100%">
+                <p>Diwali, also known as the Festival of Lights, is celebrated by millions of people around the globe,
+                    especially those of Hindu, Jain, and Sikh faiths. It symbolizes the victory of light over darkness,
+                    good over evil, and knowledge over ignorance. During Diwali, homes are decorated with lights and
+                    candles, and families gather to pray, feast, and exchange gifts. Fireworks are also a common part of
+                    the celebrations. Diwali fosters unity and joy among communities, promoting cultural diversity and
+                    harmony.</p>
+                <p><strong>Author:</strong> Maya Patel (MCSE:Y2:S1)</p>
+                <p><strong>Date:</strong> May 12, 2024</p>
+            </div>
+            <div class="comments">
+                <h4 style="text-decoration: underline; margin-top: 35px; margin-bottom: 0;">Comments</h4>
+                <div class="comment">
+                    <p><strong>John Braily:</strong> I love Diwali! The sweets, the decorations, the fireworks -
+                        everything about it is so festive and vibrant. It's a time for family and friends to come
+                        together and create lasting memories.</p>
+                </div>
+                <div class="comment">
+
+                    <p><strong>Emily Watson:</strong> Diwali is such a beautiful celebration! While it's not a tradition
+                        native to Britain, it's wonderful to see the vibrant colors, lights, and joy it brings to
+                        communities here. It's a reminder of the diversity and richness of cultures around the world,
+                        and it's heartwarming to join in the festivities and learn more about Hindu traditions.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="discussion-section">
+            <div class="post">
+                <h3>Chinese New Year Celebrations</h3>
+                <img src="https://recipes.net/wp-content/uploads/2023/09/8-things-to-know-about-chinese-new-year-1695727261.jpeg"
+                    alt="Chinese New Year Celebrations" style="width: 100%">
+                <p>Chinese New Year, also known as the Spring Festival, is one of the most important celebrations in
+                    Chinese culture. It marks the beginning of the lunar new year and is celebrated with family
+                    reunions, feasting, and various cultural activities. Traditional customs include lion and dragon
+                    dances, firecrackers, and the giving of red envelopes containing money. The festival represents a
+                    time of renewal, reflection, and hope for prosperity in the coming year. Chinese New Year
+                    celebrations are not only limited to China but are also observed by Chinese communities worldwide.
+                </p>
+                <p><strong>Author:</strong> Wei Chen (MECE:Y2:S2)</p>
+                <p><strong>Date:</strong> May 15, 2024</p>
+            </div>
+            <div class="comments">
+                <h4 style="text-decoration: underline; margin-top: 35px; margin-bottom: 0;">Comments</h4>
+                <p><strong>Michael Thompson:</strong> The Chinese New Year is such an exciting time! Although it's not a
+                    tradition we grew up with, the energy and festivities surrounding it are infectious. I love seeing
+                    the dragon dances, fireworks, and sharing in the delicious food. It's a testament to the cultural
+                    diversity we have in our community, and it's fantastic to learn about and celebrate traditions from
+                    around the world.</p>
+            </div>
+        </section>
+
+        
+
         <footer>
-            &copy; Northampton University, 2024
+            &copy; Northumbria University, 2024
         </footer>
     </div>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
-    <script src="script.js"></script>
 </body>
 
 </html>

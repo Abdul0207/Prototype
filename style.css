@@ -136,7 +136,7 @@ input[type=text],input[type=email], select, textarea {
   resize: vertical;
 }
 
-input[type=submit] {
+input[type=submit], .link-btn {
   background-color: #24628f;
   color: white;
   padding: 12px 20px;
@@ -144,9 +144,14 @@ input[type=submit] {
   border-radius: 4px;
   cursor: pointer;
 }
-
-input[type=submit]:hover {
+.link-btn{
+    display: block;
+    text-align: center;
+}
+input[type=submit]:hover, .link-btn:hover {
   background-color: steelblue;
+  text-decoration: none;
+  color: #fff;
 }
 .flex-disp{
     display: flex;
@@ -170,4 +175,11 @@ footer{
     text-align: center;
     padding: 10px;
     clear: both;
+}
+.nav-links li{
+    display: inline;
+    margin-right: 20px;
+}
+.brandlogo img{
+    width: 200px;
 }

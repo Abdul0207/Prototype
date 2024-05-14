@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Northumbria University - User Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images/logo-fav.png">
+    <style>
+        .buttons {
+            margin-top: 20px;
+            display: flex;
+            justify-content: flex-start;
+        }
+
+        .buttons button {
+            padding: 10px 20px;
+            background-color: #2f3f74;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            margin-right: 10px;
+        }
+
+        .buttons button:hover {
+            background-color: #283357;
+        }
+
+        .student-details {
+            background-color: #f9f9f9;
+            padding: 0 0 20px 20px;
+            border-radius: 8px;
+        }
+
+        .student-details h2 {
+            color: #2f3f74;
+            margin-bottom: 10px;
+        }
+
+        .student-details p {
+            margin: 5px 0;
+        }
+
+        .student-details ul {
+            padding-left: 20px;
+        }
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin: 20px;
+        }
+
+        .student-details {
+            flex: 1;
+            margin-right: 20px;
+        }
+
+        .study-materials {
+            flex: 2;
+        }
+
+        .card {
+            background-color: #f2f2f2;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+        }
+
+        .card img {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+
+        .card h3 {
+            color: #2f3f74;
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .card a {
+            display: block;
+            color: #2f3f74;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .card a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo brandlogo">
+                <a href="index.html"><img src="images/logo.png" alt="Northumbria University Logo"></a>
+            </div>
+            <ul class="nav-links">
+                <li><a class="active" href="dashboard.html">Dashboard</a></li>
+                <li><a href="user-discussion.html">Discussions</a></li>
+                <li><a href="user-peers.html">Know your peers</a></li>
+                <li><a href="raise-query.html">Raise a Complaint</a></li>
+                <li><a href="index.html">Logout</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="student-details">
+            <h2>Student Details</h2>
+            <p><strong>Name:</strong> John Doe</p>
+            <p><strong>Student ID:</strong> NU123456</p>
+            <p><strong>Nationality:</strong> British</p>
+            <p><strong>Course:</strong> MSc in Cohesive Learning</p><br>
+            <p><strong>Subjects Enrolled:</strong>
+            <ul>
+                <li>Cohesive Learning Strategies</li>
+                <li>Cross-Cultural Communication</li>
+                <li>Intercultural Competence</li>
+                <li>Conflict Resolution</li>
+                <li>Teamwork Dynamics</li>
+            </ul>
+            </p>
+            <p><strong>Email:</strong> john.doe@Northumbria.co.uk</p>
+            <div class="buttons">
+                <button>Edit Profile</button>
+                <button>Change Password</button>
+            </div>
+        </div>
+
+        <div class="study-materials">
+            <div class="card">
+                <h3>Cultural Awareness Guide</h3>
+                <p>Enhance your understanding of various cultures and foster cohesive learning environments with this
+                    comprehensive guide. Gain insights into cultural values, customs, and communication styles, and
+                    learn how to effectively engage with diverse perspectives. Explore practical tips and strategies for
+                    promoting cultural awareness and inclusion in academic settings.</p>
+                <a href="#">Download</a>
+            </div>
+            <hr>
+            <div class="card">
+                <h3>Effective Communication Tips</h3>
+                <p>Discover practical communication strategies to bridge cultural differences and promote cohesive
+                    learning environments. This guide provides actionable tips for effective verbal and nonverbal
+                    communication, active listening, and cross-cultural understanding. Learn how to communicate
+                    respectfully, resolve misunderstandings, and build strong relationships with peers from diverse
+                    backgrounds.</p>
+                <a href="#">Download</a>
+            </div>
+            <hr>
+            <div class="card">
+                <h3>Teamwork Guide</h3>
+                <p>Cultivate teamwork skills and leverage diversity for collaborative success in your academic journey.
+                    This guide offers practical advice for building trust, fostering open communication, and resolving
+                    conflicts within diverse teams. Explore strategies for effective delegation, decision-making, and
+                    goal setting to maximize team performance and achieve shared objectives.</p>
+                <a href="#">Download</a>
+            </div>
+            <hr>
+            <div class="card">
+                <h3>Conflict Resolution Handbook</h3>
+                <p>Equip yourself with effective conflict resolution techniques to navigate challenging situations and
+                    promote harmony in academic environments. This handbook covers strategies for managing interpersonal
+                    conflicts, addressing cultural misunderstandings, and facilitating constructive dialogue. Learn how
+                    to de-escalate conflicts, find mutually beneficial solutions, and maintain positive relationships
+                    with peers.</p>
+                <a href="#">Download</a>
+            </div>
+        </div>
+
+    </div>
+    <footer>
+        &copy; Northumbria University, 2024
+    </footer>
+</body>
+
+</html>

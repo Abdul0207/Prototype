@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Northumbria University - User Discussions</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images/logo-fav.png">
+    <style>
+        .navbar .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin: 20px;
+        }
+        .discussion-section {
+            width: 75%;
+            margin: auto;
+            border-bottom: 1px solid #fff;
+        }
+
+        .post img {
+            width: 50% !important;
+            border: 2px #fff solid;
+            box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
+        }
+        .link-btn{
+            width: 200px;
+            margin: auto;
+        }
+
+        .filter-options {
+            margin: 20px 0;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+
+        .filter-options label {
+            margin-right: 10px;
+        }
+
+        .filter-options select {
+            padding: 5px;
+            border-radius: 3px;
+            border: 1px solid #ccc;
+        }
+
+        .search-box {
+            margin-bottom: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .search-box input[type="text"] {
+            width: 300px;
+            padding: 5px;
+            border-radius: 3px;
+            border: 1px solid #ccc;
+        }
+
+        .search-btn {
+            padding: 5px 10px;
+            border-radius: 3px;
+            border: 1px solid #ccc;
+            cursor: pointer;
+            background-color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo brandlogo">
+                <a href="index.html"><img src="images/logo.png" alt="Northumbria University Logo"></a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a class="active" href="user-discussion.html">Discussions</a></li>
+                <li><a href="user-peers.html">Know your peers</a></li>
+                <li><a href="raise-query.html">Raise a Complaint</a></li>
+                <li><a href="index.html">Logout</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="banner">
+            <div class="banner-abt">
+                <h1 style="margin-bottom: 0">Discussions</h1>
+                <p>Engage in meaningful discussions with fellow students and faculty members.</p>
+                <a href="add-discussion.html" class="link-btn">Start a Discussion</a>
+            </div>
+        </div>
+
+        <div class="filter-options">
+            <label for="filter-course">Filter by Course:</label>
+            <select id="filter-course" name="filter-course">
+                <option value="">All</option>
+                <option value="MSc in Cohesive Learning">MSc in Cohesive Learning</option>
+                <option value="BSc in Cultural Studies">BSc in Cultural Studies</option>
+                <option value="MA in Intercultural Communication">MA in Intercultural Communication</option>
+            </select>
+
+            <label for="filter-nationality">Filter by Nationality:</label>
+            <select id="filter-nationality" name="filter-nationality">
+                <option value="">All</option>
+                <option value="British">British</option>
+                <option value="Indian">Indian</option>
+                <option value="Chinese">Chinese</option>
+                <option value="American">American</option>
+            </select>
+        </div>
+
+        <div class="search-box">
+            <input type="text" id="search-text" name="search-text" placeholder="Search by post title...">
+            <button class="search-btn">Search</button>
+        </div>
+
+        <section class="discussion-section">
+            <!-- Diwali Celebrations -->
+            <div class="post">
+                <h3>Diwali Celebrations Around the World</h3>
+                <img src="https://pragativadi.com/wp-content/uploads/2023/11/images-46.jpeg" alt="Diwali Celebrations" style="width: 100%">
+                <p>Diwali, also known as the Festival of Lights, is celebrated by millions of people around the globe, especially those of Hindu, Jain, and Sikh faiths. It symbolizes the victory of light over darkness, good over evil, and knowledge over ignorance. During Diwali, homes are decorated with lights and candles, and families gather to pray, feast, and exchange gifts. Fireworks are also a common part of the celebrations. Diwali fosters unity and joy among communities, promoting cultural diversity and harmony.</p>
+                <p><strong>Author:</strong> Maya Patel (MCSE:Y2:S1)</p>
+                <p><strong>Date:</strong> May 12, 2024</p>
+                <form class="comment-form" action="" method="POST">
+                    <textarea id="comment1" name="comment1" placeholder="Write your comment.." style="height:100px"></textarea>
+                    <input type="submit" value="Post Comment">
+                </form>
+            </div>
+            <div class="comments">
+                <div class="comment">
+                    <p><strong>John Braily:</strong> I love Diwali! The sweets, the decorations, the fireworks - everything about it is so festive and vibrant. It's a time for family and friends to come together and create lasting memories.</p>
+                </div>
+                <div class="comment">
+                    <p><strong>Emily Watson:</strong> Diwali is such a beautiful celebration! While it's not a tradition native to Britain, it's wonderful to see the vibrant colors, lights, and joy it brings to communities here. It's a reminder of the diversity and richness of cultures around the world, and it's heartwarming to join in the festivities and learn more about Hindu traditions.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="discussion-section">
+            <!-- Chinese New Year Celebrations -->
+            <div class="post">
+                <h3>Chinese New Year Celebrations</h3>
+                <img src="https://recipes.net/wp-content/uploads/2023/09/8-things-to-know-about-chinese-new-year-1695727261.jpeg" alt="Chinese New Year Celebrations" style="width: 100%">
+                <p>Chinese New Year, also known as the Spring Festival, is one of the most important celebrations in Chinese culture. It marks the beginning of the lunar new year and is celebrated with family reunions, feasting, and various cultural activities. Traditional customs include lion and dragon dances, firecrackers, and the giving of red envelopes containing money. The festival represents a time of renewal, reflection, and hope for prosperity in the coming year. Chinese New Year celebrations are not only limited to China but are also observed by Chinese communities worldwide.</p>
+                <p><strong>Author:</strong> Wei Chen (MESE:Y2:S2)</p>
+                <p><strong>Date:</strong> May 15, 2024</p>
+                <form class="comment-form" action="" method="POST">
+                    <textarea id="comment2" name="comment2" placeholder="Write your comment.." style="height:100px"></textarea>
+                    <input type="submit" value="Post Comment">
+                </form>
+            </div>
+            <div class="comments">
+                <p><strong>Michael Thompson:</strong> The Chinese New Year is such an exciting time! Although it's not a tradition we grew up with, the energy and festivities surrounding it are infectious. I love seeing the dragon dances, fireworks, and sharing in the delicious food. It's a testament to the cultural diversity we have in our community, and it's fantastic to learn about and celebrate traditions from around the world.</p>
+            </div>
+        </section>
+
+    </div>
+    <footer>
+        &copy; Northumbria University, 2024
+    </footer>
+</body>
+
+</html>
